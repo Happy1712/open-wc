@@ -1,3 +1,10 @@
+---
+permalink: 'linting/linting-eslint.html'
+section: guides
+tags:
+  - guides
+---
+
 # Linting ESLint
 
 Use [ESLint](https://eslint.org/) to lint your es6 code.
@@ -56,13 +63,9 @@ Run:
 - `npm run format:eslint` to auto format your files
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/eslint-config/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/eslint-config/README.md';
   }
 </script>

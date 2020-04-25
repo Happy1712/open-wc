@@ -1,3 +1,12 @@
+---
+title: FAQ
+permalink: 'faq/index.html'
+section: faq
+tags:
+  - faq
+  - section
+---
+
 # FAQ
 
 In this section you can find answers to frequently asked questions regarding javascript and Web Components.

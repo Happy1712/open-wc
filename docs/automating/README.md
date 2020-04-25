@@ -1,3 +1,10 @@
+---
+permalink: 'automating/index.html'
+section: guides
+tags:
+  - guides
+---
+
 # Automating
 
 Having continuous integration in your project can provide valuable insights, and we consider it an essential in your projects.

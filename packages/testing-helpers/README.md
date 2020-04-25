@@ -1,3 +1,10 @@
+---
+permalink: 'testing/testing-helpers.html'
+section: guides
+tags:
+  - guides
+---
+
 # Testing Helpers
 
 A library with helpers functions for testing in the browser.
@@ -268,13 +275,9 @@ afterEach(() => {
 ```
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-helpers/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-helpers/README.md';
   }
 </script>

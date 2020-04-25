@@ -1,3 +1,10 @@
+---
+permalink: 'developing/routing.html'
+section: guides
+tags:
+  - guides
+---
+
 # Routing
 
 ## All Roads Lead To Rome

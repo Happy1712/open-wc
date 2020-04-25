@@ -1,3 +1,10 @@
+---
+permalink: 'testing/semantic-dom-diff.html'
+section: guides
+tags:
+  - guides
+---
+
 # Semantic Dom Diff
 
 `semantic-dom-diff` allows diffing chunks of dom or HTML for semantic equality:
@@ -301,13 +308,9 @@ expect(el).dom.to.equal('<div>Hey</div>', {
 We plan to change and include it in the next [breaking testing release](https://github.com/open-wc/open-wc/projects/1).
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/semantic-dom-diff/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/semantic-dom-diff/README.md';
   }
 </script>

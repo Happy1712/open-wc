@@ -1,3 +1,10 @@
+---
+permalink: 'init/index.html'
+section: guides
+tags:
+  - guides
+---
+
 # Create Open Web Components
 
 Web component project scaffolding.
@@ -93,13 +100,9 @@ npm init @open-wc
   <br/>
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/create/src/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/create/src/README.md';
   }
 </script>

@@ -1,3 +1,10 @@
+---
+permalink: 'guide/component-libraries.html'
+section: guides
+tags:
+  - guides
+---
+
 # Web Component Libraries
 
 The hardest part of any project is often getting content onto that first blank page. To make it easier to get your app off the ground quickly, we've collected a list of design systems which are based on web-components from which you can acquire elements or inspiration.

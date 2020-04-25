@@ -1,3 +1,10 @@
+---
+permalink: 'linting/linting-types.html'
+section: guides
+tags:
+  - guides
+---
+
 # Linting Types
 
 Use [TypeScript](https://www.typescriptlang.org/) to type lint your es6 JSDoc annotated code.

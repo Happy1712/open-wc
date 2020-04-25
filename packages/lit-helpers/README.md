@@ -1,3 +1,10 @@
+---
+permalink: 'developing/lit-helpers.html'
+section: guides
+tags:
+  - guides
+---
+
 # Lit Helpers
 
 A library with helpers functions for working with [lit-html](https://lit-html.polymer-project.org/) and [lit-element](https://lit-element.polymer-project.org/)
@@ -196,13 +203,9 @@ class Initialized extends ReadOnlyPropertiesMixin(LitElement) {
 ```
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-helpers/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-helpers/README.md';
   }
 </script>

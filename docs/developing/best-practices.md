@@ -1,3 +1,10 @@
+---
+permalink: 'developing/best-practices.html'
+section: guides
+tags:
+  - guides
+---
+
 # Best Practices
 
 If you're using our [linting setup](/linting), you may already follow some Web Component best practices, but unfortunately, linters do not cover everything. On this page, you can find our recommended best practices.

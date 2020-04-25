@@ -1,3 +1,10 @@
+---
+permalink: 'demoing/index.html'
+section: guides
+tags:
+  - guides
+---
+
 # Demoing via storybook
 
 For demoing, documenting and showcasing different states of your Web Component, we recommend using [storybook](https://storybook.js.org/).
@@ -313,13 +320,9 @@ module.exports = {
 ```
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/building-storybook/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/building-storybook/README.md';
   }
 </script>

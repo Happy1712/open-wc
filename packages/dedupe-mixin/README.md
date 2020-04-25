@@ -1,3 +1,10 @@
+---
+permalink: 'guide/dedupe-mixin.html'
+section: guides
+tags:
+  - guides
+---
+
 # Dedupe Mixin
 
 Automatically Deduplicate JavaScript Class Mixins
@@ -205,13 +212,9 @@ Consider this example:
 _Ascii Graphics made with [AsciiFlow](http://asciiflow.com/)_
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/dedupe-mixin/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/dedupe-mixin/README.md';
   }
 </script>

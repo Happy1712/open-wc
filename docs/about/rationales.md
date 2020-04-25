@@ -1,3 +1,10 @@
+---
+permalink: 'about/rationales.html'
+section: about
+tags:
+  - about
+---
+
 # Rationales
 
 Our recommendations must fulfill certain criteria before we publish them.

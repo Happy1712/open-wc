@@ -1,3 +1,10 @@
+---
+permalink: 'testing/testing-karma-bs.html'
+section: guides
+tags:
+  - guides
+---
+
 # Testing via Browserstack
 
 Configuration for setting up browserstack testing with karma.
@@ -92,13 +99,9 @@ npm run test:bs
 ```
 
 <script>
-  export default {
-    mounted() {
-      const editLink = document.querySelector('.edit-link a');
-      if (editLink) {
-        const url = editLink.href;
-        editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-karma-bs/README.md';
-      }
-    }
+  const editLink = document.querySelector('.edit-link a');
+  if (editLink) {
+    const url = editLink.href;
+    editLink.href = url.substr(0, url.indexOf('/master/')) + '/master/packages/testing-karma-bs/README.md';
   }
 </script>
